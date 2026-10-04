@@ -1,0 +1,27 @@
+# Created using wingetcreate 1.12.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Zuentec.ORDNA
+PackageVersion: 0.42.0
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Ollama.Ollama
+ProductCode: '{4F896AB9-D68C-45C8-9BE0-7C15037C4352}_is1'
+AppsAndFeaturesEntries:
+- DisplayName: ORDNA 0.42.0
+  Publisher: Eckehard Zündorf
+  ProductCode: '{4F896AB9-D68C-45C8-9BE0-7C15037C4352}_is1'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://zuentec.de/download/ORDNA-0.42.0-Setup.exe
+  InstallerSha256: 0B8BC471F32ACDE306EAFE5787E4462814F1BD1D2F4AD6589C877E79D321909D
+ManifestType: installer
+ManifestVersion: 1.12.0
+ReleaseDate: 2026-10-04
